@@ -1,0 +1,71 @@
+<h1 mat-dialog-title>Student Details</h1>
+<div mat-dialog-content>
+
+  <form [formGroup]="registerForm">
+
+    <!-- names -->
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>First Name</mat-label>
+        <input matInput placeholder="Enter name" formControlName="firstName">
+      </mat-form-field>
+    </div>
+    <!-- Lastname -->
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Sir Name</mat-label>
+        <input matInput placeholder="Enter Sur name" formControlName="lastName">
+      </mat-form-field>
+    </div>
+    <!-- gender -->
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Select Gender</mat-label>
+        <mat-select placeholder="Select GEnder" formControlName="gender">
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="FeMale">FeMale</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <!-- DOB -->
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Choose a DOB</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dateOB">
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </div>
+    <!-- Select Medium -->
+    <div class="row">
+      <label id="example-radio-group-label">Pick your Medium</label>
+      <mat-radio-group formControlName="medium" aria-labelledby="example-radio-group-label" class="example-radio-group">
+        <mat-radio-button class="example-radio-button" *ngFor="let medium of mediumsList" [value]="medium">
+          {{medium}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <!-- Mobile number -->
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Mobile Number</mat-label>
+        <input formControlName="mobileNo" matInput type="number" placeholder="Enter Sur name">
+      </mat-form-field>
+    </div>
+    <!-- Adress -->
+    <div class="row">
+      <mat-form-field appearance="outline">
+        <mat-label>Enter your addres</mat-label>
+        <textarea formControlName="addres" matInput placeholder="D-No 3-121, 2nd Stret"></textarea>
+      </mat-form-field>
+    </div>
+    <!-- butons -->
+    <div class="row">
+      <div mat-dialog-action [align]="'end'">
+        <button class="close1" mat-raised-button color="warn">Close</button>
+        <button mat-raised-button color="primary">Save</button>
+      </div>
+    </div>
+  </form>
+
+</div>
