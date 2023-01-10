@@ -1,0 +1,54 @@
+{
+  "Students": [
+    {
+      "firstName": "anand",
+      "lastName": "sujan",
+      "gender": "Male",
+      "dateOB": "2023-01-09T18:30:00.000Z",
+      "medium": "TM",
+      "mobileNo": 35485465,
+      "addres": "hyderabad",
+      "id": 1
+    },
+    {
+      "firstName": "Charan",
+      "lastName": "Chunchu",
+      "gender": "Male",
+      "dateOB": "2023-01-09T18:30:00.000Z",
+      "medium": "EM",
+      "mobileNo": 9879878454,
+      "addres": "hyd",
+      "id": 2
+    },
+    {
+      "firstName": "Karthik",
+      "lastName": "Vishtno",
+      "gender": "Male",
+      "dateOB": "2023-01-10T18:30:00.000Z",
+      "medium": "TM",
+      "mobileNo": 1657984218,
+      "addres": "Chennai",
+      "id": 3
+    },
+    {
+      "firstName": "aaMan",
+      "lastName": "bushan",
+      "gender": "FeMale",
+      "dateOB": "2022-12-02T18:30:00.000Z",
+      "medium": "HIN",
+      "mobileNo": 1687564198,
+      "addres": "china",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

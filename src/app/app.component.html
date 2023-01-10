@@ -1,4 +1,15 @@
-<app-main></app-main>
+<!-- <app-main></app-main> -->
+
+<!-- lifecycle hooks -->
+
+<!-- <app-child [myNumber] = "counter"></app-child>
+<button type="button" class="btn btn-primary" (click)="add()">Add 1</button>
+<button type="button" class="btn btn-danger" (click)="sub()">Sub 1</button> -->
+
+
+<app-main (customeve)="updatedata($event)"></app-main>
+
+<h2>{{fromChild}}</h2>
 
 
 <router-outlet></router-outlet>

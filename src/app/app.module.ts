@@ -20,10 +20,16 @@ import { MainComponent,  } from './main/main.component';
   import {MatDatepickerModule} from '@angular/material/datepicker';
   import { MatNativeDateModule } from '@angular/material/core';
   import {MatRadioModule} from '@angular/material/radio';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+  import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+  import { HttpClientModule } from '@angular/common/http';
+  import {MatPaginatorModule} from '@angular/material/paginator';
+import { ChildComponent } from './Child/child/child.component';
 
 @NgModule({
   imports: [
+
+    MatPaginatorModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     MatRadioModule,
@@ -47,6 +53,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     RegisterComponent,
     MainComponent,
+    ChildComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

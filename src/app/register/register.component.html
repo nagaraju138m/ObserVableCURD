@@ -63,7 +63,7 @@
     <div class="row">
       <div mat-dialog-action [align]="'end'">
         <button class="close1" mat-raised-button color="warn">Close</button>
-        <button mat-raised-button color="primary">Save</button>
+        <button mat-raised-button color="primary" (click)="AddStu()">{{actionBtn}}</button>
       </div>
     </div>
   </form>
